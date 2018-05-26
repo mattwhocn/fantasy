@@ -1,12 +1,6 @@
 var path = require('path')
 var CURRENT_PATH = '../src/pages/'
-
-var config = [
-  {
-    name: 'first',
-    title: '第一个demo'
-  }
-]
+var config = require('utils/data')
 
 var htmlConfig = [], entryConfig = {}
 config.forEach((item) => {

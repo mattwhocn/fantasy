@@ -15,14 +15,16 @@ var homePage = {
 
   _initCatalogList() {
     console.log(catalogList)
-    let catalogItem = '<li class="catalog-item">' + 
-                        '<div class="module-l"></div>' + 
-                        '<div class="module-r"></div>' + 
-                        '<div class="module-t"></div>' + 
-                      '</li>'
-    catalogList.forEach(() => {
-      
-    })                 
+    catalogList.forEach((item, index) => {
+      let catalogItem = $('<a href="/'+item.href+'.html">'
+                        +   '<li class="catalog-item">'
+                        +     '<div class="module-l"></div>'
+                        +     '<div class="module-r">'+ item.name +'</div>'
+                        +     '<div class="module-t">'+ index +'</div>'
+                        +   '</li>'
+                        + '</a>')
+      $('.catalog').append(catalogItem)
+    })         
   }
 
 }

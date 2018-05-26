@@ -1,11 +1,15 @@
 var catalogList = [
   {
-    name: 'diyipian',
-    id: 1
+    name: '第一个',
+    id: 1,
+    href: 'first',
+    title: '第一个demo'
   },
   {
-    name: 'diyipian2',
-    id: 2
+    name: '第二个',
+    id: 2,
+    href: 'second',
+    title: '第一个demo'
   }
 ]
 module.exports = catalogList
